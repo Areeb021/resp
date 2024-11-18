@@ -1,0 +1,254 @@
+
+/* General Navbar Styling */
+@font-face {
+    font-family: myfont;
+    src: url(Cinzel_Decorative\,Source_Serif_4/Cinzel_Decorative);
+}
+
+
+.content {
+    
+    background: linear-gradient(to right, #1E90FF, #87CEFA);
+    font-family: 'myfont';
+    min-height: 200vh; 
+   
+}
+.icn{
+    margin-left: 5px;
+    color: whitesmoke;
+}
+
+nav {
+    background-color:rgb(7, 115, 197);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative; /* For dropdown positioning */
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 20px;
+    font-family: 'myfont';
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color:  rgba(255, 146, 107, 0.979);
+    color: white;
+}
+
+/* Dropdown Menu Styling */
+.dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%; /* Place below the parent */
+    left: px;
+    background-color: #1E90FF;
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    border-radius: 4px;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+.dropdown li {
+    margin: 0;
+}
+
+.dropdown li a {
+    color: white;
+    padding: 8px ;
+    display: block;
+    text-transform: capitalize;
+}
+
+.dropdown li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Show Dropdown on Hover */
+nav ul li:hover .dropdown {
+    display: block; /* Make dropdown visible on hover */
+   color: #FF4500;
+}
+.dp2{
+    position: absolute;
+    left: 105%;
+    top:50%;
+    width: 210%;
+    background-color:#1E90FF;
+    padding: 5px;
+    border-radius: 4px;
+    display: none;
+    z-index: 1001;
+
+}
+
+.dp2_li a{
+
+    display: block;
+    padding: 3px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+nav ul li ul li:hover .dp2{
+    display: block;
+    color: #FF4500;
+    
+}
+/* Mobile-first, stack the items vertically */
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        
+    }
+    nav ul li {
+        margin-right: 0; /* Remove right margin for better alignment */
+        width: 100%; /* Make each item take full width */
+    }
+
+    /* Dropdown should open as a full-width dropdown in small screens */
+    .dropdown {
+        position: static; /* Reset the positioning */
+        width: 100%; /* Make dropdown take full width */
+    }
+
+    .dp2 {
+        position: static; /* Reset positioning for sub-dropdown */
+        width: 100%; /* Make sub-dropdown take full width */
+    }
+  p{
+      font-size: 10px;
+      margin-left: 10px;
+      
+  }
+  
+  .main-h,.proj,h2{
+      font-size: 18px;
+  }
+ 
+  .prj ul li{
+      font-size: smaller;
+     right: 30%;
+     }
+     .cards{
+         flex-direction: column;
+         margin-bottom: 50px;
+         
+         
+
+         
+     }
+     .c1,.c2,.c3{
+         height: auto;
+         width: 45%;
+        margin-bottom: 100px;
+       
+     }
+    .
+    
+     .box-in-card{
+         height: 15px;
+        
+     }
+     .abt-cont{
+        text-align: justify;
+        font-size: 10px;
+    }
+
+
+}
+.main-h,.proj,{
+    font-family: 'myfont';
+    color:rgb(0, 43, 83) ;
+    font-style: oblique;
+    text-align: center;
+    position: relative;
+    top: 15%;
+    left: 0%;
+
+}
+.proj,h2{
+    text-transform: capitalize;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.int p,{
+    text-align: justify;
+    color:rgb(4, 62, 117) ;
+    width: 70%;
+    position: relative;
+    left: 25%;
+    top: 0%;
+}
+.abt-cont{
+    left: 0%;
+    text-align: justify;
+}
+.prj ul{
+    display: flex;
+    
+    
+}
+.prj ul li {
+    margin-right: 15px;
+   list-style: none;
+   position: relative;
+   left:41%;
+   font-size: 24px;
+   font-family: 'myfont';
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+   
+    
+}
+.c1,.c2,.c3{
+    border:3px solid whitesmoke;
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.box-in-card{
+    width: 250px;
+    height: 100px;
+    border: 3px solid black;
+    position: relative;
+    top: 250px;
+    left: -3px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: rgb(4, 62, 117);
+    color: rgb(255, 255, 255);
+
+}
+.box-content{
+    
+    font-size: 8px;
+}
